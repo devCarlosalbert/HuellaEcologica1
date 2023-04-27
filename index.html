@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario para sumar y promediar valores de opcion de radio</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body style="background-color:#3b9910;" >
+        <div>
+        <h3>Escuela: ITGAM</h3>
+        <h3>Materia: Desarrollo Sustentable</h3>
+		<h2>Solicitud de Registro Datos Personales</h2>
+        <label for="nombre">Apellido Paterno: </label>
+		<input type="text" id="apellido_p" name="apellido_p"><br><br>
+        <label for="nombre">Apellido Matero: </label>
+		<input type="text" id="apellido_m" name="apellido_m"><br><br>
+		<label for="nombre">Nombres: </label>
+		<input type="text" id="nombre" name="nombre"><br><br>
+		<label for="edad">Edad: </label>
+		<input type="number" id="edad" name="edad"><br><br>
+        <label for="genero">Género: </label>
+		<select id="genero" name="genero">
+			<option value="masculino">Masculino</option>
+			<option value="femenino">Femenino</option>
+			<option value="otrogenero">Otro Genero</option>
+        </select><br><br>
+        <label for="carrera">Carrera: </label>
+        <select id="carrera" name="carrera">
+			<option value="tics">Tics</option>
+			<option value="ambiental">Ambiental</option>
+			<option value="industrial">Industrial</option>
+            <option value="gestion empresarial">Gestion empresarial</option>
+            <option value="otraocupacion">Otra Ocupacion</option>
+		</select><br><br>
+        </div>
+        <form id="formulario">
+            <div>
+                <label>1.¿Cuántas raciones d e fruta consumes a la semana?</label><br>
+                <label for="opciones" style="font-weight: bold;">a) No consumo</label>
+                <input type="radio" id="opcion1" name="opciones" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;" value="0" /><br>
+                <label for="opcion1">b)1 a 2 raciones a la semana </label>
+                <input type="radio" id="opcion2" name="opciones" value="0.0011" /><br>
+                <label for="opcion2">c)2 a 4 raciones a la semana </label>
+		        <input type="radio" id="opcion3" name="opciones" value="0.0023" /><br>
+                <label for="opcion3">d)4 a 6 raciones a la semana </label>
+		        <input type="radio" id="opcion4" name="opciones" value="0.0039" /><br>
+                <label for="opcion4"> e)6 a 8 raciones a la semana </label>
+		        <input type="radio" name="opcion5" value="0.0055" /><br>
+		        </div>
+                <br>
+                <br>
+                <div>
+                    <label>2.¿Acostumbras incluir hortalizas (jitomate, tomate, zanahoria, papas; etc.) en tu alimentación?</label><br>
+                    <label for="opcion1">a) Sí</label>
+                    <input type="radio" id="opcion1" name="opciones1" value="0.00083" /><br>
+                    <label for="opcion2">b) No </label>
+                    <input type="radio" id="opcion2" name="opciones1" value="0" /><br>
+                    <br>
+                    <br>
+                </div>
+                <br>
+                <br>
+                <diV>
+                    <label>3.¿Cuántas piezas de pan (dulce y/o salado) consumes a la semana?</label><br>
+                    <label for="opcion1">a)No consumo 0</label>
+                    <input type="radio" id="opcion1" name="opciones2" value="0" /><br>
+                    <label for="opcion2">b)1 a 2 piezas de pan a la semana </label>
+                    <input type="radio" id="opcion2" name="opciones2" value="0.005" /><br>
+                    <label for="opcion3">c)2 a 4 piezas de pan a la semana</label>
+                    <input type="radio" id="opcion3" name="opciones2" value="0.01" /><br>
+                    <label for="opcion4">d)4 a 6 piezas de pan a la semana </label>
+                    <input type="radio" id="opcion4" name="opciones2" value="0.016" /><br>
+                    <label type="opcion5">e)6 a 8 piezas de pan a la semana </label>
+                    <input type="radio" id="opcion5" name="opciones2" value="0.023" /><br>
+                    <br>
+                    <br>
+                </diV>
+                <br>
+                <br>
+                <div>
+                    <label>4.¿Cuántas piezas de tortilla consumes en promedio al día?</label><br>
+                    <label for="opcion1">a)No consumo 0</label>
+                    <input type="radio" id="opcion1" name="opciones3" value="0" /><br>
+                    <label for="opcion2">b)1 a 2 piezas de tortilla al dia </label>
+                    <input type="radio" id="opcion2" name="opciones3" value="0.0055" /><br>
+                    <label for="opcion3">c)2 a 4 piezas de tortilla al dia</label>
+                    <input type="radio" id="opcion3" name="opciones3" value="0.010" /><br>
+                    <label for="opcion4">d)4 a 6 piezas de tortilla al dia </label> 
+                    <input type="radio" id="opcion4" name="opciones3" value="0.018" /><br>
+                    <label for="opcion5">e)6 a 8 piezas de tortilla al dia </label>
+                    <input type="radio" id="opcion5" name="opciones3" value="0.025" /><br>
+                    <label for="opcion6">f)8 a 10 piezas de tortilla al dia </label>
+                    <input type="radio" id="opcion6" name="opciones3" value="0.032" /><br>
+                    <br>
+                    <br>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label>5.¿Cuántas veces a la semana consumes carne de res?</label><br>
+                    <label for="opcion1">a)No consumo 0</label>
+                    <input type="radio" id="opcion1" name="opciones4" value="0" /><br>
+                    <label for="opcion2">b)1 a 2 piezas de pan a la semana </label>
+                    <input type="radio" id="opcion2" name="opciones4" value="0.039" /><br>
+                    <label for="opcion3">c)2 a 4 piezas de pan a la semana </label>
+                    <input type="radio" id="opcion3" name="opciones4" value="0.094" /><br>
+                    <label for="opcion4">d)5 a 6 piezas de pan a la semana	</label>
+                    <input type="radio" id="opcion4" name="opciones4" value="0.14" /><br>
+                    <br>
+                    <br>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label>6.¿Cuántas veces a la semana consumes carne de pollo?</label><br>
+                    <label for="opcion1">a)No consumo 0</label>
+                    <input type="radio" id="opcion1" name="opciones5" value="0" /><br>
+                    <label for="opcion2">b)1 a 2 veces por semana </label>
+                    <input type="radio" id="opcion2" name="opciones5" value="0.039" /><br>
+                    <label for="opcion3">c)3 a 4 veces por semana</label>
+                    <input type="radio" id="opcion3" name="opciones5" value="0.21" /><br>
+                    <label for="opcion4">d)5 a 6 veces por semana </label>	
+                    <input type="radio" id="opcion4" name="opciones5" value="0.33" /><br>
+                    <br>
+                    <br>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label>7.¿Cuántas veces a la semana consumes carne de cerdo?</label><br>
+                    <label for="opcion1">a)No consumo 0</label>
+                    <input type="radio" id="opcion1" name="opciones6" value="0" /><br>
+                    <label for="opcion2">b)1 a 2 veces por semana</label>
+                    <input type="radio" id="opcion2" name="opciones6" value="0.047" /><br>
+                    <label for="opcion3">c)3 a 4 veces por semana</label> 
+                    <input type="radio" id="opcion3" name="opciones6" value="0.11" /><br>
+                    <label for="opcion4">d)5 a 6 veces por semana </label>	
+                    <input type="radio" id="opcion4" name="opciones6" value="0.17" /><br>
+                    <br>
+                    <br>
+                </div>
+                <br>
+                <br>
+                <div>
+                <label>8.¿Consumes pescado y/o mariscos?</label><br>
+                <label for="opcion1">a)No consumo </label>
+                <input type="radio" id="opcion1" name="opciones7" value="0" /><br>
+                <label for="opcion2">b)Si consumo </label>
+                <input type="radio" id="opcion2" name="opciones7" value="0.039">	
+                <br>
+                <br>
+               </div>
+               <br>
+               <br>
+               <div>
+                 <label>9.¿Cuántas veces a la semana consumes yoghurt?(Considera una ración en presentación individual de vaso o para beber)</label><br>
+                 <label for="opcion1">a)No consumo </label>
+                 <input type="radio" id="opcion1" name="opciones8" value="0" /><br>
+                 <label for="opcion2">b)1 a 2 veces a la semana</label>
+                 <input type="radio" id="opcion2" name="opciones8" value="0.0019" /><br>	
+                 <label for="opcion3">c)3 a 4 veces a la semana</label>	
+                <input type="radio" id="opcion3" name="opciones8" value="0.0045" /><br>
+                <label for="opcion4">d)5 a 6 veces a la semana</label>	
+                <input type="radio" id="opcion4" name="opciones8" value="0.0071" /><br>
+                <label for="opcion5">e)7 a 8 veces a la semana</label>
+                <input type="radio" id="opcion5" name="opciones8" value="0.096" /><br>	
+                <br>
+                <br>
+               </div>
+                <br>
+                <br>
+                <div>
+                <label>10.¿Cuántas veces a la semana tomas leche?</label><br>
+                <label for="opcion1">a)No consumo </label>
+                <input type="radio" id="opcion1" name="opciones9" value="0" /><br>
+                <label for="opcion2">b)1 a 2 veces por semana</label>
+                <input type="radio" id="opcion2" name="opciones9" value="0.010" /><br>
+                <label for="opcion3">c)3 a 4 veces por semana</label>	
+                <input type="radio" id="opcion3" name="opciones9" value="0.024" /><br>
+                <label for="opcion4">d)5 a 6 veces por semana</label>	
+                <input type="radio" id="opcion4" name="opciones9" value="0.038" /><br>
+                <label for="opcion5">e)7 a 8 veces por semana</label>	
+                <input type="radio" id="opcion5" name="opciones9" value="0.049" /><br>
+                <label for="opcion6">f)9 a 10 veces por semana</label>
+                <input type="radio" id="opcion6" name="opciones9" value="0.063" /><br>
+                <br>
+                <br>
+                </div>
+                <br>  
+                <br>
+                <div>
+                <label>11.¿Cuál de los siguientes alimentos acostumbras incluir en tu dieta?</label><br>
+                <label for="opcion1">()Arroz, frijol y lenteja </label>
+                <input type="radio" id="opcion1" name="opciones10" value="0.013" /><br>
+                <label for="opcion2">()Nopalitos y chile</label>
+                <input type="radio" id="opcion2" name="opciones10" value="0.0010" /><br>
+                <label for="opcion3">()Aguacate </label> 
+                <input type="radio" id="opcion3" name="opciones10" value="0.0021" /><br>
+                <label for="opcion4">()Cacahuates </label>	
+                <input type="radio" id="opcion4" name="opciones10" value="0.0026" /><br> 
+                <label for="opcion5">()Huevo </label>
+                <input type="radio" id="opcion5" name="opciones10" value="0.13" /><br>
+                <br>
+                <br>
+                </div>
+                <br>
+                <br>
+                <div>
+                <label>12.¿Cuántos cigarrillos fumas al día?</label><br>
+                <label for="opcion1">a)No consumo cero</label>
+                <input type="radio" id="opcion1" name="opciones11" value="0" /><br>
+                <label for="opcion2">b)1 al día </label>
+                <input type="radio" id="opcion2" name="opciones11" value="0.00018" /><br>
+                <label for="opcion3">c)2 al día </label>
+                <input type="radio" id="opcion3" name="opciones11" value="0.00039" /><br>
+                <label for="opcion4">d)3 al día </label>
+                <input type="radio" id="opcion4" name="opciones11" value="0.00054" /><br>
+                <label for="opcion5">e) 4 al día</label>
+                <input type="radio" id="opcion5" name="opciones11" value="0.00074" /><br>
+                <label for="opcion6">f)5 o más al día </label>
+                <input type="radio" id="opcion6" name="opciones11" value="0.0013" /><br>
+                <br>
+                <br>
+                </div>
+                <br>
+                <br>
+                <div>
+                <label>13.¿En cuánto estimas tu consumo a la semana de cerveza?</label><br>
+                <label for="opcion1">a)No consumo cero</label>
+                <input type="radio" id="opcion1" name="opciones12" value="0" /><br>
+                <label for="opcion2">b)1 a 2 cervezas a la semana</label>
+                <input type="radio" id="opcion2" name="opciones12" value="0.0032" /><br>
+                <label for="opcion3">c)3 a 4 cervezas a la semana</label>	
+                <input type="radio" id="opcion3" name="opciones12" value="0.0075" /><br>
+                <label for="opcion4">d)5 a 6 cervezas a la semana	</label>	
+                <input type="radio" id="opcion4" name="opciones12" value="0.011" /><br>
+                <br>
+                <br>
+                </div>
+                <br>
+                <br>
+                <center><h2>SECCIÓN (B) Transporte (Considera un día hábil promedio)</h2></center>
+                <br>
+                <diV> <label>14.¿Cuántos kilómetros recorres diariamente en el Sistema de Transporte Colectivo Metro (STC-Metro)?(Considera recorridos de ida y vuelta)</label><br>
+                <label for="opcion1">a)No consumo cero</label>
+                <input type="radio" id="opcion1" name="opciones13" value="0" /><br>
+                <label for="opcion2">b)2 a 6 kilómetros diarios </label>
+                <input type="radio" id="opcion2" name="opciones13" value="0.00012" /><br>
+                <label for="opcion3">c)7 a 12 kilómetros diarios</label>
+                <input type="radio" id="opcion3" name="opciones13" value="0.00030" /><br> 
+                <label for="opcion4">d)13 a 18 kilómetros diarios </label>
+                <input type="radio" id="opcion4" name="opciones13" value="0.00049" /><br>
+                <label for="opcion5">e)19 a 24 kilómetros diarios</label>
+                <input type="radio" id="opcion5" name="opciones13" value="0.00067" /><br>
+                <label for="opcion6">f)25 a 30 kilómetros diarios	</label>
+                <input type="radio" id="opcion6" name="opciones13" value="0.00087" /><br>
+                <br>
+                <br>
+                </diV>
+                <br>
+                <br>
+                <div>
+                    <label>14.	¿Cuántos kilómetros recorres diariamente en el Sistema de Transporte Colectivo Metro (STC-Metro)?</label><br>
+                 <label for="opcion1">a)	No lo utilizo</label>	
+                <input type="radio"  id="opcion1" name="opciones13" value="0"><br>
+                  <label for="opcion2">b)	2 a 6 kilómetros diarios</label>	
+                <input type="radio"  id="opcion2" name="opciones13" value="0.00012"><br>
+                 <label for="opcion3">c)	7 a 12 kilómetros diarios</label>	
+                <input type="radio"  id="opcion3" name="opciones13" value="0.00030"><br>
+                 <label for="opcion4">13 a 18 kilómetros diarios</label>	
+                <input type="radio"  id="opcion4" name="opciones13" value="0.00049"><br>
+                <label for="opcion5">e)	19 a 24 kilómetros diarios</label>	
+                <input type="radio"  id="opcion5" name="opciones13" value="0.00067"><br>
+                <label for="opcion6">f)	25 a 30 kilómetros diarios</label>	
+                <input type="radio"  id="opcion6" name="opciones13" value="0.00087"><br>
+               </div>
+               <br>
+               <br>
+               <div>
+                    <label>15.-¿Cuántos kilómetros recorres diariamente en transporte colectivo? (Combi, Microbús y Autobús). (Considera recorridos de ida y vuelta)</label><br>
+                 <label for="opcion1">a)	5 a 7 kilómetros diarios</label>	
+                    <input type="radio"  id="opcion1" name="opciones14" value="0.020"><br>
+                 <label for="opcion2">b)	8 a 10 kilómetros diarios</label>	
+                    <input type="radio"  id="opcion2" name="opciones14" value="0.030"><br>
+                 <label for="opcion3">c)	11 a 13 kilómetros diarios</label>	
+                    <input type="radio"  id="opcion3" name="opciones14" value="0.040"><br>
+                 <label for="opcion4">d)	14 a 16 kilómetros diarios</label>	
+                    <input type="radio"  id="opcion4" name="opciones14" value="0.051"><br>
+                 <label for="opcion5">e)	17 a 20 kilómetros diarios</label>	
+                    <input type="radio"  id="opcion5" name="opciones14" value="0.063"><br>
+               </div>
+               <br>
+               <br>
+               <div>
+                    <label>16.-¿Qué distancia en kilómetros recorres al día en motocicleta? (Considera recorridos de ida y vuelta)</label><br>
+                 <label for="opcion1">a)	No lo utilizo</label>	
+                    <input type="radio"  id="opcion1" name="opciones15" value="0"><br>
+                 <label for="opcion2">b)	2 a 4 kilómetros diarios</label>	
+                    <input type="radio"  id="opcion2" name="opciones15" value="0.031"><br>
+                 <label for="opcion3">c)	5 a 7 kilómetros diarios</label>	
+                    <input type="radio"  id="opcion3" name="opciones15" value="0.063"><br>
+                 <label for="opcion4">d)	8 a 10 kilómetros diarios</label>	
+                    <input type="radio"  id="opcion4" name="opciones15" value="0.095"><br>
+                 <label for="opcion5">e)	11 a 13 kilómetros diarios</label>	
+                    <input type="radio"  id="opcion5" name="opciones15" value="0.12"><br>
+                 <label for="opcion6">f)	14 a 16 kilómetros diarios</label>	
+                    <input type="radio"  id="opcion5" name="opciones15" value="0.15"><br>
+               </div>
+               <br>
+               <br>
+               <div>
+                    <label>17.-¿Qué distancia recorres en kilómetros en automóvil y/o taxi? (Considera recorridos de ida y vuelta)</label><br>
+                 <label for="opcion1">a)	No lo utilizo</label>	
+                    <input type="radio"  id="opcion1" name="opciones16" value="0"><br>
+                 <label for="opcion2">b)	2 a 6 kilómetros diarios</label>	
+                    <input type="radio"  id="opcion2" name="opciones16" value="0.041"><br>
+                 <label for="opcion3">c)	7 a 12 kilómetros diarios</label>	
+                    <input type="radio"  id="opcion3" name="opciones16" value="0.098"><br>
+                 <label for="opcion4">d)	13 a 18 kilómetros diarios</label>	
+                    <input type="radio"  id="opcion4" name="opciones16" value="0.15"><br>
+                 <label for="opcion5">e)	19 a 24 kilómetros diarios</label>	
+                    <input type="radio"  id="opcion5" name="opciones16" value="0.21"><br>
+                 <label for="opcion6">f)	25 a 30 kilómetros</label>	
+                    <input type="radio"  id="opcion5" name="opciones16" value="0.28"><br>
+               </div>
+               <br>
+               <br>
+               <h2>SECCIÓN (C) Energía</h2>
+               <br>
+               <br>
+               <div>
+                    <label>18.-¿Cuál de los siguientes aparatos electrodomésticos tienes en tu casa? Coloca el punto correspondiente de tu elección en la línea. En caso de no contar con algún aparato electrodoméstico coloca un Cero.</label><br>
+                 <label for="opcion1">a)Plancha</label>	
+                    <input type="radio"  id="opcion1" name="opciones17" value="0.026"><br>
+                 <label for="opcion2">b)Licuadora</label>	
+                    <input type="radio"  id="opcion2" name="opciones17" value="0.00086"><br>
+                 <label for="opcion3">c)Microondas</label>	
+                    <input type="radio"  id="opcion3" name="opciones17" value="0.0040"><br>
+                 <label for="opcion4">d)Refrigerador.</label>	
+                    <input type="radio"  id="opcion4" name="opciones17" value="0.028"><br>
+                 <label for="opcion5">e)Lavadora</label>	
+                    <input type="radio"  id="opcion5" name="opciones17" value="0.0046"><br>
+                 <label for="opcion6">f)Estufa eléctrica</label>	
+                    <input type="radio"  id="opcion6" name="opciones17" value="0.058"><br>
+                 <label for="opcion7">g)Estufa de gas con piloto</label>	
+                    <input type="radio"  id="opcion7" name="opciones17" value="0.095"><br>
+                 <label for="opcion7">h)	Estufa de gas sin piloto</label>	
+                    <input type="radio"  id="opcion7" name="opciones17" value="0.077"><br>
+               </div>
+               <br>
+               <br>
+               <div>
+                    <label>19.-¿Cuántos focos convencionales hay en tu casa?</label><br>
+                 <label for="opcion1">a)1 a 3 focos</label>	
+                    <input type="radio"  id="opcion1" name="opciones18" value="0.011"><br>
+                 <label for="opcion2">b)	4 a 6 focos</label>	
+                    <input type="radio"  id="opcion2" name="opciones18" value="0.027"><br>
+                 <label for="opcion3">c)	7 a 9 focos</label>	
+                    <input type="radio"  id="opcion3" name="opciones18" value="0.044"><br>
+                 <label for="opcion4">d)10 a 12 focos</label>	
+                    <input type="radio"  id="opcion4" name="opciones18" value="0.059"><br>
+                 <label for="opcion5">e)13 a 15 focos</label>	
+                    <input type="radio"  id="opcion5" name="opciones18" value="0.077"><br>
+               </div>
+               <br>
+               <br>
+               <div>
+                    <label>20.-¿Cuántos focos ahorradores hay en tu casa?</label><br>
+                 <label for="opcion1">a)1 a 3 focos</label>	
+                    <input type="radio"  id="opcion1" name="opciones19" value="0.0029"><br>
+                 <label for="opcion2">b)	4 a 6 focos</label>	
+                    <input type="radio"  id="opcion2" name="opciones19" value="0.0071"><br>
+                 <label for="opcion3">c)	7 a 9 focos</label>	
+                    <input type="radio"  id="opcion3" name="opciones19" value="0.011"><br>
+                 <label for="opcion4">d)10 a 12 focos</label>	
+                    <input type="radio"  id="opcion4" name="opciones19" value="0.015"><br>
+                 <label for="opcion5">e)13 a 15 focos</label>	
+                    <input type="radio"  id="opcion5" name="opciones19" value="0.020"><br>
+               </div>
+               <br>
+               <br>
+               <div>
+                    <label>21.	¿Utilizas teléfono celular? Si tu respuesta es sí, multiplica el número de dispositivos móviles que posees por la cantidad que aparece a la derecha, esto en caso de contar con más de un celular.</label><br>
+                 <label for="opcion1">a)Si</label>	
+                    <input type="radio"  id="opcion1" name="opciones20" value="0.011"><br>
+                 <label for="opcion2">b)No</label>	
+                    <input type="radio"  id="opcion2" name="opciones20" value="0"><br>
+               </div>
+               <br>
+               <br>
+               <div>
+                    <label>22.	De los siguientes aparatos electrónicos: ¿Cuánto tiempo a la semana los mantienes encendidos? Televisor</label><br>
+                 <label for="opcion1">a)7 horas o menos a la semana</label>	
+                    <input type="radio"  id="opcion1" name="opciones21" value="0.0043"><br>
+                 <label for="opcion2">b)8 a 12 horas a la semana</label>	
+                    <input type="radio"  id="opcion2" name="opciones21" value="0.010"><br>
+                 <label for="opcion3">c)13 a 17 horas a la semana</label>	
+                    <input type="radio"  id="opcion3" name="opciones21" value="0.016"><br>
+                 <label for="opcion4">d)	18 a 22 horas a la semana</label>	
+                    <input type="radio"  id="opcion4" name="opciones21" value="0.021"><br>
+                 <label for="opcion5">e)13 a 15 focos</label>	
+                    <input type="radio"  id="opcion5" name="opciones21" value="0.020"><br>
+               </div>
+               <br>
+               <br>
+               <div>
+                    <label>Computadora portatil</label><br>
+                 <label for="opcion1">a)15 a 20 horas a la semana</label>	
+                    <input type="radio"  id="opcion1" name="opciones22" value="0.013"><br>
+                 <label for="opcion2">b)21 a 25 horas a la semana</label>	
+                    <input type="radio"  id="opcion2" name="opciones22" value="0.018"><br>
+                 <label for="opcion3">c)26 a 30 horas a la semana</label>	
+                    <input type="radio"  id="opcion3" name="opciones22" value="0.022"><br>
+                 <label for="opcion4">d)31 a 35 horas a la semana</label>	
+                    <input type="radio"  id="opcion4" name="opciones22" value="0.025"><br>
+                 <label for="opcion5">e)	36 a 40 horas a la semana</label>	
+                    <input type="radio"  id="opcion5" name="opciones22" value="0.020"><br>
+               </div>
+               <br>
+               <br>
+               <div>
+                    <label>DVD</label><br>
+                 <label for="opcion1">a)	2 a3 horas a la semana</label>	
+                    <input type="radio"  id="opcion1" name="opciones23" value="0.00034"><br>
+                 <label for="opcion2">b)	4 a 6 horas a la semana</label>	
+                    <input type="radio"  id="opcion2" name="opciones23" value="0.00069"><br>
+                 <label for="opcion3">c)7 a 9 horas a la semana</label>	
+                    <input type="radio"  id="opcion3" name="opciones23" value="0.0011"><br>
+                 <label for="opcion4">d)	10 a 12 horas a la semana</label>	
+                    <input type="radio"  id="opcion4" name="opciones23" value="0.0014"><br>
+                 <label for="opcion5">e)	13 a 15 horas a la semana</label>	
+                    <input type="radio"  id="opcion5" name="opciones23" value="0.0018"><br>
+               </div>
+               <br>
+               <br>
+               <div>
+                    <label>Estéreo</label><br>
+                 <label for="opcion1">a)	2 a3 horas a la semana</label>	
+                    <input type="radio"  id="opcion1" name="opciones24" value="0.0045"><br>
+                 <label for="opcion2">b)	4 a 6 horas a la semana</label>	
+                    <input type="radio"  id="opcion2" name="opciones24" value="0.0091"><br>
+                 <label for="opcion3">c)7 a 9 horas a la semana</label>	
+                    <input type="radio"  id="opcion3" name="opciones24" value="0.014"><br>
+                 <label for="opcion4">d)	10 a 12 horas a la semana</label>	
+                    <input type="radio"  id="opcion4" name="opciones24" value="0.019"><br>
+                 <label for="opcion5">e)	13 a 15 horas a la semana</label>	
+                    <input type="radio"  id="opcion5" name="opciones24" value="0.025"><br>
+               </div>
+               <br>
+               <br>
+               <div>
+                    <label>23.-¿Tu calentador o “boiler” utiliza:?</label><br>
+                 <label for="opcion1">a)Gas LP</label>	
+                    <input type="radio"  id="opcion1" name="opciones25" value="0.078"><br>
+                 <label for="opcion2">b)Gas natural</label>	
+                    <input type="radio"  id="opcion2" name="opciones25" value="0.076"><br>
+                    <label for="opcion2">c)Electricidad</label>	
+                    <input type="radio"  id="opcion3" name="opciones25" value="0.048"><br>
+               </div>
+               <br>
+               <br>
+               <div>
+                    <label>24.-¿Cuánto tiempo permanezco debajo de la ducha?</label><br>
+                 <label for="opcion1">a)	Más de 20 minutos</label>	
+                    <input type="radio"  id="opcion1" name="opciones26" value="0.12"><br>
+                 <label for="opcion2">b)	Entre 10 y 20 minutos</label>	
+                    <input type="radio"  id="opcion2" name="opciones26" value="0.063"><br>
+                    <label for="opcion2">c)Entre 5 y 10 minutos</label>	
+                    <input type="radio"  id="opcion3" name="opciones26" value="0.031"><br>
+                    <label for="opcion2">d)	Sólo 5 minutos</label>	
+                    <input type="radio"  id="opcion4" name="opciones26" value="0.017"><br>
+               </div>
+               <br>
+               <br>
+               <div>
+                    <label>25.-¿Cuándo me lavó los dientes, yo?</label><br>
+                 <label for="opcion1">a)	Dejo correr el agua mientras lo hago</label>	
+                    <input type="radio"  id="opcion1" name="opciones27" value="0.00084"><br>
+                 <label for="opcion2">b)	Utilizo un vaso de agua</label>	
+                    <input type="radio"  id="opcion2" name="opciones27" value="0.00010"><br>
+               </div>
+               <br>
+               <br>
+               <div>
+                    <label>26.-¿Cuántas veces al día vacío el inodoro o “WC”? </label><br>
+                 <label for="opcion1">2 a 3 veces al día</label>	
+                    <input type="radio"  id="opcion1" name="opciones28" value="0.020"><br>
+                 <label for="opcion2">4 a 5 veces al día</label>	
+                    <input type="radio"  id="opcion2" name="opciones28" value="0.037"><br>
+                    <label for="opcion3">c)	6 a 7 veces al día</label>	
+                    <input type="radio"  id="opcion3" name="opciones28" value="0.054"><br>
+               </div>
+               <br>
+               <br>
+               <div>
+                    <label>27.-¿Cuántas veces al día vacío el inodoro o “Wc”? </label><br>
+                 <label for="opcion1">2 a 3 veces al día</label>	
+                    <input type="radio"  id="opcion1" name="opciones29" value="0.0063"><br>
+                 <label for="opcion2">4 a 5 veces al día</label>	
+                    <input type="radio"  id="opcion2" name="opciones29" value="0.011"><br>
+                    <label for="opcion3">c)	6 a 7 veces al día</label>	
+                    <input type="radio"  id="opcion3" name="opciones29" value="0.016"><br>
+               </div>
+        </form>
+        <script src="CalculoHuella.js"></script>
+
+    </body>
+    <footer>
+		<div class="boton-container">
+			<input type="button" onclick="mostrarsuma()" value="Calcular" class="button">
+		</div>
+	</footer>
+</html>

@@ -1,0 +1,23 @@
+div,h2{
+    width: 50%;
+    margin: 0 auto;
+  }
+  .button{
+    font-size: 24px;
+    padding: 16px 32px;
+    width: 200px;
+  }
+  footer {
+    position: relative; /* Necesario para posicionar el botón relativo al pie de página */
+  }
+  
+  .button{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    text-align: center;
+  }
+  input[type="text"] {
+    background-color: #f2f2f2;
+  }  
